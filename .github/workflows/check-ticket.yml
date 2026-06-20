@@ -11,8 +11,8 @@ jobs:
       - name: Check Tickets
         uses: mooyoul/melon-ticket-actions@v1.1.0
         with:
-          product-id: 204755          # <-- 내 공연 ID로 변경
+          product-id: 213346          # <-- 내 공연 ID로 변경
           schedule-id: 100001         # <-- 내 회차 ID로 변경
-          seat-id: 1_0                # <-- 내 좌석 등급 ID로 변경
+          seat-id: 100004                # <-- 내 좌석 등급 ID로 변경
           slack-incoming-webhook-url: ${{ secrets.SLACK_WEBHOOK_URL }}
           message: '포도알 떴다! 예매창으로 뛰어라! 🏃‍♂️'
