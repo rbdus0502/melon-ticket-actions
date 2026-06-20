@@ -1,7 +1,8 @@
 name: melon-ticket-check
 on:
+  workflow_dispatch: # <-- 3번째 줄에 이 코드를 꼭 넣어주셔야 버튼이 생깁니다!
   schedule:
-    - cron: '*/5 * * * *' # 5분마다 실행
+    - cron: '*/5 * * * *' # # 5분마다 실행
 
 jobs:
   job:
